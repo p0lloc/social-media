@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-center {
+    @apply lg:w-3/5 md:w-4/5 mx-auto p-2 md:p-0;
+}
+
+.container-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    opacity: 0;
+}
+
+.container:hover .container-child {
+    opacity: 1.0;
+}
+
+.btn {
+    @apply bg-blue-500 hover:bg-blue-600 font-bold px-4 py-2 rounded-md text-white;
+}
+
+input {
+    @apply w-full border p-2 rounded-md;
+}
